@@ -5,8 +5,8 @@ const API = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&orde
  * las criptomonedas
  */
 let from = 0;
-let to = 2;
-const add = 2;
+let to = 3;
+const add = 3;
 const limit = 100;
 
 
@@ -27,16 +27,17 @@ const fillData = (data) => {
     let j = 0;
 
     for (let i = from; i < to; i++) {
-        const element = data[i];
 
-        html += `<div class="accordion-item">
+        if(i<limit){
+            const element = data[i];
+            html += `<div class="accordion-item">
                     <h2 class="accordion-header" id="heading${ids[j]}">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${ids[j]}" aria-expanded="true" aria-controls="collapse${ids[j]}">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${ids[j]}" aria-expanded="false" aria-controls="collapse${ids[j]}">
                         <img src="${element.image}" alt="">
                         <h4>${element.name}</h4>
                     </button>
                     </h2>
-                    <div id="collapse${ids[j]}" class="accordion-collapse collapse show" aria-labelledby="heading${ids[j]}" data-bs-parent="#accordionExample">
+                    <div id="collapse${ids[j]}" class="accordion-collapse collapse" aria-labelledby="heading${ids[j]}" data-bs-parent="#accordionExample">
                     <div class="accordion-body criptoInfo">
                         <ul>
                             <li>${element.name}</li>
@@ -49,6 +50,7 @@ const fillData = (data) => {
                     </div>
                 </div>`;
         j++;
+        }
     }
 
     document.getElementById("accordionExample").innerHTML=html;

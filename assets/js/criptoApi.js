@@ -6,8 +6,8 @@ const API = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&orde
  */
 let from = 0;
 let to = 2;
-let add = 2;
-let limit = 100;
+const add = 2;
+const limit = 100;
 
 
 const getAPI = async (url) => {

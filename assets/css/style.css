@@ -4,11 +4,7 @@
 *{margin: 0;
 padding: 0;
 box-sizing: border-box;
-font-family: 'lato'sans-serif;}
-
-* {
-  border: 0;
-  padding: 0;
+font-family: 'lato'sans-serif;
 }
 
 .header {
@@ -16,7 +12,7 @@ font-family: 'lato'sans-serif;}
   font-weight: 600;
   font-size: 40px;
   width: 100%;
-  background: linear-gradient(90deg, #0f2144 0%, #015a75 35%);
+  background: linear-gradient(90deg, #0f2144 10%, #015a75 60%);
   z-index: 1;
 }
 

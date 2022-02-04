@@ -15,7 +15,7 @@ body{
   font-size: 40px;
   width: 100%;
   background: linear-gradient(90deg, #0f2144 0%, #015a75 35%);
-  z-index: 1;
+  z-index: 4;
 }
 
 .headerImage {
@@ -123,13 +123,13 @@ p {
 }
 
 @media only screen and (max-width: 767px) {
-  .icon {
+  .icon, .divCripto {
     display: none;
   }
   .text {
     width: auto !important;
     top: 0;
-  }
+  } 
   .navBar {
     top: 55px;
   }

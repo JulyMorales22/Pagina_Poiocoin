@@ -105,6 +105,10 @@ p {
   font-size: 20px;
 }
 
+.btns{
+  font-size: 22px;
+}
+
 .navBar{
   position: fixed;
   width: 100%;

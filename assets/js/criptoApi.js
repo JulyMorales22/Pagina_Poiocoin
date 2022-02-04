@@ -9,7 +9,6 @@ let to = 3;
 const add = 3;
 const limit = 100;
 
-
 const getAPI = async (url) => {
     try {
         const res = await fetch(url);
@@ -30,9 +29,9 @@ const fillData = (data) => {
 
         if(i<limit){
             const element = data[i];
-            html += `<div class="accordion-item">
+            html += `<div class="accordion-item" id="accordion${j}">
                     <h2 class="accordion-header" id="heading${ids[j]}">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${ids[j]}" aria-expanded="false" aria-controls="collapse${ids[j]}">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${ids[j]}" aria-expanded="false" aria-controls="collapse${ids[j]}" id="btnAccordion${j}">
                         <img src="${element.image}" alt="">
                         <h4>${element.name}</h4>
                     </button>
@@ -75,9 +74,9 @@ const pagination = (goToPrev=null, goToNext=null) =>{
         getAPI(API);
     }
 
-    btn += `<li class="page-item ${(from<=0) ? "disabled" : ""} " id="prev"> <a class="page-link" onclick="pagination(true, false)">Prev</a> </li>`;
+    btn += `<li class="page-item ${(from<=0) ? "disabled" : ""} ${(localStorage.getItem("nightMode")==true) ? "prevNext" : ""} " id="prev"> <a class="page-link" onclick="pagination(true, false)">Prev</a> </li>`;
 
-    btn += `<li class="page-item ${(to>=limit) ? "disabled" : ""} " id="next"> <a class="page-link" onclick="pagination(false, true)">Next</a> </li>`;
+    btn += `<li class="page-item ${(to>=limit) ? "disabled" : ""} ${(localStorage.getItem("nightMode")==true) ? "prevNext" : ""} " id="next"> <a class="page-link" onclick="pagination(false, true)">Next</a> </li>`;
 
     document.getElementById("criptoPagination").innerHTML=btn;
 

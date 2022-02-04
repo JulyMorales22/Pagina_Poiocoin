@@ -31,8 +31,17 @@ body {
   color: #2980b9;
 }
 
-.content{
-  
+.pagination{
+  cursor: pointer;
+}
+
+.criptoInfo{
+  font-size: 20px;
+}
+
+.accordion-header img{
+  width: 60px;
+  margin-right: 10px;
 }
 
 /* Comienzan los estilos del titulo */
@@ -100,6 +109,10 @@ p {
 
 .nav-link{
   font-size: 20px;
+}
+
+.btns{
+  font-size: 22px;
 }
 
 .navBar{

@@ -33,13 +33,13 @@
     color:#ffcd5c !important;
   }
   .dark-mode{
-    background-color: #313030 !important;  
-    transition:background-color .5s !important;
+    background: #313030 !important;  
+    transition:background .5s !important;
     
   }
   .dark-mode2{
-    background-color: #0e0e0e !important; 
-    transition:background-color .5s !important;
+    background: #0e0e0e !important; 
+    transition:background .5s !important;
     
   }
   .dark-mode,.dark-mode2{

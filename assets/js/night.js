@@ -6,7 +6,7 @@ const sunMode = () => {
   removingDarkMode("body", "dark-mode");
   removingDarkMode("navNight", "dark-mode2");
   document.getElementById("id-moon").classList.remove("active");
-  this.classList.add("active");
+  btnSun.classList.add("active");
 };
 
 const removingDarkMode = (id, className) => {
@@ -18,7 +18,7 @@ const nightMode = () => {
   removingSunMode("body", "dark-mode");
   removingSunMode("navNight", "dark-mode2");
   document.getElementById("id-sun").classList.remove("active");
-  this.classList.add("active");
+  btnNight.classList.add("active");
 };
 const removingSunMode = (id, classMode) => {
   document.getElementById(id).classList.add(classMode);

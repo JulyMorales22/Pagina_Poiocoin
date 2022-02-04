@@ -6,7 +6,7 @@ box-sizing: border-box;
 font-family: 'lato'sans-serif;}
 
 body{
-  background: linear-gradient(90deg, #0f2144 0%, #015a75 35%);
+  background: linear-gradient(180deg, #313283 0%, #01789c 35%);
 }
 
 .header {
@@ -100,7 +100,7 @@ p {
 }
 
 .midnight {
-  color: #2c3e50;
+  color: #0e5ead;
 }
 
 /* Terminan los estilos del titulo */
@@ -115,7 +115,7 @@ p {
 
 .navBar{
   width: 100%;
-  background-color: rgb(49, 50, 131);
+  background-color: #313283;
 }
 
 .dropMenu{
@@ -129,7 +129,7 @@ p {
   .text {
     width: auto !important;
     top: 0;
-  } 
+  }
   .navBar {
     top: 55px;
   }
@@ -143,6 +143,27 @@ p {
 .divContainer{
   margin-top: 200px;
 }
+
+.divCripto{
+  top: 160px;
+  padding-top: 40px;
+  height: 497px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.divCripto::-webkit-scrollbar{
+  width: 4px;
+  height: 90%;
+  border-radius: 20px;
+  background: #9b9b9b;
+}
+
+.divCripto::-webkit-scrollbar-thumb{
+  background: #4d4e4e;
+  border-radius: 20px;
+}
+
 .container__card{
   max-width: 1200px;
   margin: auto;

@@ -237,3 +237,22 @@ transform: translateZ(60px);
   box-shadow: 1px 1px 30px 0px #d3ff0f;
 }
 
+.mainCoinBox{
+  display: flex;
+
+}
+
+.coinBox img{
+  width: 200px;
+  padding: 10px 10px;
+
+  /* width: 48%; */
+}
+
+.coinBox p{
+  color: #ffffff;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+

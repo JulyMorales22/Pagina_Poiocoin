@@ -1,32 +1,35 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 40px;
+* {
+  border: 0;
+  padding: 0;
 }
 
-.header{
-    width: 100%;
-    background-color: #efefef;
-    position: fixed;
-    z-index: 1;
+.header {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  width: 100%;
+  background: linear-gradient(90deg, #0f2144 0%, #015a75 35%);
+  z-index: 1;
 }
 
-.headerImage{
-    width: 100px;
+.headerImage {
+  width: 100px;
 }
 
-.poin{
+.poin {
   color: #c0392b;
 }
 
-.coin{
+.coin {
   color: #2980b9;
 }
 
-.content{
-  
+.contenido{
+  margin-top: 135px;
+  padding-top: 5px;
+  padding-left: 25px;
 }
 
 /* Comienzan los estilos del titulo */
@@ -92,29 +95,29 @@ p {
 
 /* Terminan los estilos del titulo */
 
-.nav-link{
+.nav-link {
   font-size: 20px;
 }
 
-.navBar{
-  position: fixed;
+.navBar {
   width: 100%;
+  background-color: rgb(49, 50, 131);
 }
 
-@media only screen and (max-width:767px){
-  .icon{
+@media only screen and (max-width: 767px) {
+  .icon {
     display: none;
   }
-  .text{
+  .text {
     width: auto !important;
   }
-  .navBar{
-    top: 60px;
+  .navBar {
+    top: 55px;
   }
 }
 
-@media only screen and (max-width:925px){
-  .text{
+@media only screen and (max-width: 925px) {
+  .text {
     width: 300px;
   }
 }

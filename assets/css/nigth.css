@@ -68,4 +68,8 @@
     border:1px solid white;
     color:white;
   }
-  
+  @media only screen and (max-width: 376px) {
+    .container-btn-mode{
+      right: 0px;
+    }
+  }

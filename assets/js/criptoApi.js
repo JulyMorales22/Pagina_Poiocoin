@@ -42,10 +42,10 @@ const fillData = (data) => {
                     <div class="accordion-body criptoInfo">
                         <ul>
                             <li>${element.name}</li>
-                            <li>${element.symbol}</li>
-                            <li>Rank: ${element.market_cap_rank}</li>
-                            <li>$${element.current_price}</li>
-                            <li>Equivale a 2000 PC</li>
+                            <li>Simbolo: ${element.symbol}</li>
+                            <li>Ranking: ${element.market_cap_rank}</li>
+                            <li>$${element.current_price} USD</li>
+                            <li>Equivale a:  ${element.current_price/8350} PoioCoin</li>
                         </ul>
                     </div>
                     </div>

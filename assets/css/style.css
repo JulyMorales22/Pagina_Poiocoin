@@ -1,10 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
 @import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap);
-
 *{margin: 0;
 padding: 0;
 box-sizing: border-box;
-font-family: 'lato'sans-serif;
+font-family: 'lato'sans-serif;}
+
+body{
+  background: linear-gradient(90deg, #0f2144 0%, #015a75 35%);
 }
 
 .header {
@@ -13,7 +15,7 @@ font-family: 'lato'sans-serif;
   font-size: 40px;
   width: 100%;
   background: linear-gradient(90deg, #0f2144 10%, #015a75 60%);
-  z-index: 1;
+  z-index: 4;
 }
 
 .headerImage {
@@ -121,13 +123,13 @@ p {
 }
 
 @media only screen and (max-width: 767px) {
-  .icon {
+  .icon, .divCripto {
     display: none;
   }
   .text {
     width: auto !important;
     top: 0;
-  }
+  } 
   .navBar {
     top: 55px;
   }
@@ -164,6 +166,8 @@ p {
   position: relative;
   transform-style: preserve-3d;
   transition: all 500ms;
+  background-color: #ffffff00;
+  border:none ;
 }
 .card__front{
 background-size:cover ;
@@ -232,7 +236,4 @@ transform: translateZ(60px);
 .body__card_back input:hover{
   box-shadow: 1px 1px 30px 0px #d3ff0f;
 }
-.informationBlock{
-  overflow-y: scroll;
-  height: 100vh;
-}
+

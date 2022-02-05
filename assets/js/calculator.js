@@ -7,6 +7,7 @@ const POICOIN_USD =8350;
 let inputNum = document.getElementById("numIngresado");
 let  investment = document.getElementById("inversion");
 let buttonCal = document.getElementById("Calcular");
+let cod = document.getElementById("moneda");
 let  investmentValue;
 
 const showValue = (value) =>{
@@ -15,20 +16,20 @@ const showValue = (value) =>{
 
 const calculator =()=>{
     let total =0;
-let cod = document.getElementById("moneda").value;
-    if ((inputNum.value)!="" & cod !="Seleccione su moneda") {
+   let select = cod.value;
+    if ((inputNum.value)!="" & select !="Seleccione su moneda") {
         if (inputNum.value >0) {
             investmentValue=inputNum.value;
-            if (cod=="EUR") {
+            if (select=="EUR") {
                 total = investmentValue / POICOIN_EUR;
                 showValue(total);
-            } else if(cod =="GBP"){
+            } else if(select =="GBP"){
                 total = investmentValue / POICOIN_GBP;
                 showValue(total);
-            } else if(cod="COP"){
+            } else if(select="COP"){
                  total = investmentValue / POICOIN_COP;
                  showValue(total);
-            }else if(cod=="USD"){
+            }else if(select=="USD"){
                 total= investmentValue / POICOIN_USD;
                 showValue(total);
             }
@@ -41,7 +42,16 @@ let cod = document.getElementById("moneda").value;
 
 }
 
+const clean =() =>{
+    inputNum.value ="";
+    investment.value="";
+}
+
 buttonCal.onclick = function(){
     calculator();
     
+}
+
+cod.onchange= function(){
+    clean();
 }

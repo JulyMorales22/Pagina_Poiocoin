@@ -128,6 +128,8 @@ p {
   }
   .divContainer{
     margin-top: 100px !important;
+    
+    
   }
   .text {
     width: auto !important;
@@ -151,6 +153,7 @@ p {
 }
 .divContainer{
   margin-top: 200px;
+  
 }
 
 .divCripto{
@@ -288,4 +291,15 @@ transform: translateZ(60px);
 
 .text-white{
   color: brown !important;
+  color: #2980b9,#8e44ad;
+}
+
+.title{
+  color: darkorange;
+  text-align: center;
+}
+
+.divCalculator{
+  box-sizing: border-box;
+  
 }

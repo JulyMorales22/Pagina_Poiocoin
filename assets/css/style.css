@@ -122,14 +122,18 @@ p {
   background-color: rgb(35, 36, 95);
 }
 
+.exchangeIcon{
+  color: #f5deb3;
+  font-size: 35px;
+  padding: 5px;
+}
+
 @media only screen and (max-width: 767px) {
   .icon, .divCripto {
     display: none;
   }
   .divContainer{
     margin-top: 100px !important;
-    
-    
   }
   .text {
     width: auto !important;
@@ -137,6 +141,9 @@ p {
   }
   .navBar {
     top: 55px;
+  }
+  .mainCoinBox{
+    margin-top: 30px;
   }
 }
 
@@ -278,8 +285,6 @@ transform: translateZ(60px);
 .coinBox img{
   width: 200px;
   padding: 10px 10px;
-
-  /* width: 48%; */
 }
 
 .coinBox p{

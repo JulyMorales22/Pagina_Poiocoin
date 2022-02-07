@@ -30,7 +30,7 @@ body{
   color: #2980b9;
 }
 
-.pagination{
+.textItem{
   cursor: pointer;
 }
 
@@ -161,7 +161,6 @@ p {
 }
 .divContainer{
   margin-top: 200px;
-  
 }
 
 .divCripto{

@@ -23,6 +23,4 @@ new Morris.Line({
   fillOpacity : 1.0,
   gridTextSize     : 18,
   gridTextFamily   : 'Open Sans'
-
-  
 });

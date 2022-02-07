@@ -76,9 +76,9 @@ const pagination = (goToPrev=null, goToNext=null) =>{
         getAPI(API);
     }
 
-    btn += `<li class="page-item ${(from<=0) ? "disabled" : ""} ${(localStorage.getItem("nightMode")==true) ? "prevNext" : ""} " id="prev"> <a class="page-link" onclick="pagination(true, false)">Prev</a> </li>`;
+    btn += `<li class="page-item ${(from<=0) ? "disabled" : ""} ${(localStorage.getItem("nightMode")==true) ? "prevNext" : ""} " id="prev"> <a class="page-link textItem" onclick="pagination(true, false)">Prev</a> </li>`;
 
-    btn += `<li class="page-item ${(to>=limit) ? "disabled" : ""} ${(localStorage.getItem("nightMode")==true) ? "prevNext" : ""} " id="next"> <a class="page-link" onclick="pagination(false, true)">Next</a> </li>`;
+    btn += `<li class="page-item ${(to>=limit) ? "disabled" : ""} ${(localStorage.getItem("nightMode")==true) ? "prevNext" : ""} " id="next"> <a class="page-link textItem" onclick="pagination(false, true)">Next</a> </li>`;
 
     document.getElementById("criptoPagination").innerHTML=btn;
 

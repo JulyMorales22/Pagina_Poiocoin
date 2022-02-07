@@ -122,6 +122,12 @@ p {
   background-color: rgb(35, 36, 95);
 }
 
+.exchangeIcon{
+  color: #f5deb3;
+  font-size: 35px;
+  padding: 5px;
+}
+
 @media only screen and (max-width: 767px) {
   .icon, .divCripto {
     display: none;
@@ -135,6 +141,9 @@ p {
   }
   .navBar {
     top: 55px;
+  }
+  .mainCoinBox{
+    margin-top: 30px;
   }
 }
 
@@ -151,6 +160,7 @@ p {
 }
 .divContainer{
   margin-top: 200px;
+  
 }
 
 .divCripto{
@@ -275,8 +285,6 @@ transform: translateZ(60px);
 .coinBox img{
   width: 200px;
   padding: 10px 10px;
-
-  /* width: 48%; */
 }
 
 .coinBox p{
@@ -288,11 +296,12 @@ transform: translateZ(60px);
 
 .text-white{
   color: brown !important;
+  color: #2980b9,#8e44ad;
 }
 
 .parrafo{
-  width: 800px;
-  height: 800px;
+  width: 850px;
+  height: 700px;
   padding: 40px 40px;
   font-size: 20px;
   background: #e7e1e9;
@@ -302,17 +311,47 @@ transform: translateZ(60px);
   text-align: center;
 }
 .sect1{
-  background-color: #749974;
-  width: 800px;
-  height: 800px;
+  background-color: #89ee89;
+  width: 850px;
+  height: 1500px;
+  
 }
 .sect1 h1{
   text-align: center;
 }
 .sect1 img{
-  width: 250px;
+  width: 200px;
+}
+.columna {
+  width:33%;
+  float:left;
+  padding: 30px 30px;
+}
+.columna img{
+  width: 100px;
+  margin:10px auto;
+  display:block;
+}
+@media (max-width: 500px) {
+  
+  .columna {
+    width:auto;
+    float:none;
+  }
 }
 .sect1 i{
-  text-align: justify;
+  text-align: center;
   font-size: 20px;
+  padding: 40px 40px;
+}
+.title{
+  color: darkorange;
+  text-align: center;
+}
+
+.sect1 p{
+  padding: 40px 40px;
+}
+.divCalculator{
+  box-sizing: border-box;
 }

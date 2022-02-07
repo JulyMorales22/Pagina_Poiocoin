@@ -25,7 +25,7 @@ let cod = document.getElementById("moneda").value;
             } else if(cod =="GBP"){
                 total = investmentValue / POICOIN_GBP;
                 showValue(total);
-            } else if(cod="COP"){
+            } else if(cod=="COP"){
                  total = investmentValue / POICOIN_COP;
                  showValue(total);
             }else if(cod=="USD"){

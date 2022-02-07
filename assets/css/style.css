@@ -289,3 +289,30 @@ transform: translateZ(60px);
 .text-white{
   color: brown !important;
 }
+
+.parrafo{
+  width: 800px;
+  height: 800px;
+  padding: 40px 40px;
+  font-size: 20px;
+  background: #e7e1e9;
+  text-align: justify;
+}
+.parrafo h1{
+  text-align: center;
+}
+.sect1{
+  background-color: #749974;
+  width: 800px;
+  height: 800px;
+}
+.sect1 h1{
+  text-align: center;
+}
+.sect1 img{
+  width: 250px;
+}
+.sect1 i{
+  text-align: justify;
+  font-size: 20px;
+}

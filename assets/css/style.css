@@ -300,11 +300,16 @@ transform: translateZ(60px);
 }
 
 .title{
-  color: darkorange;
+  color: white;
   text-align: center;
 }
 
 .divCalculator{
   box-sizing: border-box;
   
+}
+.imageCenter{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

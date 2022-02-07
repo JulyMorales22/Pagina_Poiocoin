@@ -6,7 +6,7 @@ box-sizing: border-box;
 font-family: 'lato'sans-serif;}
 
 body{
-  background: linear-gradient(90deg, #0f2144 0%, #015a75 35%);
+  background: linear-gradient(180deg, #313283 0%, #01789c 35%);
 }
 
 .header {
@@ -14,8 +14,8 @@ body{
   font-weight: 600;
   font-size: 40px;
   width: 100%;
-  background: linear-gradient(90deg, #0f2144 0%, #015a75 35%);
-  z-index: 1;
+  background: linear-gradient(90deg, #0f2144 10%, #015a75 60%);
+  z-index: 4;
 }
 
 .headerImage {
@@ -100,7 +100,7 @@ p {
 }
 
 .midnight {
-  color: #2c3e50;
+  color: #0e5ead;
 }
 
 /* Terminan los estilos del titulo */
@@ -115,23 +115,41 @@ p {
 
 .navBar{
   width: 100%;
-  background-color: rgb(49, 50, 131);
+  background-color: #313283;
 }
 
 .dropMenu{
   background-color: rgb(35, 36, 95);
 }
 
+.exchangeIcon{
+  color: #f5deb3;
+  font-size: 35px;
+  padding: 5px;
+}
+
 @media only screen and (max-width: 767px) {
-  .icon {
+  .icon, .divCripto {
     display: none;
+  }
+  .divContainer{
+    margin-top: 100px !important;
   }
   .text {
     width: auto !important;
-    top: 0;
+    top: 10px;
   }
   .navBar {
     top: 55px;
+  }
+  .mainCoinBox{
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .text {
+    font-size: 26px;
   }
 }
 
@@ -142,7 +160,29 @@ p {
 }
 .divContainer{
   margin-top: 200px;
+  
 }
+
+.divCripto{
+  top: 160px;
+  padding-top: 40px;
+  height: 497px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.divCripto::-webkit-scrollbar{
+  width: 4px;
+  height: 90%;
+  border-radius: 20px;
+  background: #9b9b9b;
+}
+
+.divCripto::-webkit-scrollbar-thumb{
+  background: #4d4e4e;
+  border-radius: 20px;
+}
+
 .container__card{
   max-width: 1200px;
   margin: auto;
@@ -237,3 +277,34 @@ transform: translateZ(60px);
   box-shadow: 1px 1px 30px 0px #d3ff0f;
 }
 
+.mainCoinBox{
+  display: flex;
+
+}
+
+.coinBox img{
+  width: 200px;
+  padding: 10px 10px;
+}
+
+.coinBox p{
+  color: #ffffff;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.text-white{
+  color: brown !important;
+  color: #2980b9,#8e44ad;
+}
+
+.title{
+  color: darkorange;
+  text-align: center;
+}
+
+.divCalculator{
+  box-sizing: border-box;
+  
+}

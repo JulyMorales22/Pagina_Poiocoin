@@ -32,6 +32,14 @@
     background-color:black;
     color:#ffcd5c !important;
   }
+  /* .prevNext a{
+    cursor: pointer;
+    border: none;
+    color: #2c3e50;
+    background: #d5fd24;
+    box-shadow: 1px 1px 30px -5px #b9e00b;
+    transition: box-shadow 600ms ;
+  } */
   .dark-mode{
     background: #313030 !important;  
     transition:background .5s !important;
@@ -40,10 +48,17 @@
   .dark-mode2{
     background: #0e0e0e !important; 
     transition:background .5s !important;
+  }
+  .dark-mode3{
+    background: #251f30 !important; 
+    transition:background .5s !important;
+    color: #ffffff;
     
   }
-  .dark-mode,.dark-mode2{
-    /* no funciona color: white !important;  */
+  .accordionContent{
+    background: #3d3d3d !important; 
+    transition:background .5s !important;
+    color: #ffffff;
   }
   .dark-mode h1, .dark-mode h2, .dark-mode .btn-contact{
     color:white;
@@ -53,4 +68,17 @@
     border:1px solid white;
     color:white;
   }
-  
+  @media only screen and (max-width: 376px) {
+    .container-btn-mode{
+      right: 0px;
+    }
+  }
+
+  @media only screen and (max-width: 368px) {
+    .container-btn-mode{
+      margin-top: 65px;
+    }
+    .text {
+        font-size: 30px;
+    }
+  }

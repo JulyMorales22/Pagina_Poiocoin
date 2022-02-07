@@ -300,7 +300,7 @@ transform: translateZ(60px);
 }
 
 .title{
-  color: white;
+  color: white ;
   text-align: center;
 }
 
@@ -317,6 +317,6 @@ transform: translateZ(60px);
   text-align: center;
  width: 100%;
   display: block;
-  color: #02080e;
+  color: #ffffff;
   padding: 10px 10px;
 }

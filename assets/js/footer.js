@@ -1,15 +1,15 @@
-const footer = ` <div class="container">
+const footer = ` <div class="container ">
 <div class="row">
     <div class="col-12 ">
-        <h6 class="visita" >CONTACTO:
-          <p>
+        
+           <p> <h6 class="visita" >CONTACTO : <br>
             Direccion: Bogota av 5 cll 65 b.<br>
             Celular: 31153456733 - 3201790318.<br>
             Telefono: 8390564 - 8398765 <br>
             Correo Electronico: atencionalcliente@poiocoin.com - quejasyreclamos@poiocoin.com <br>
             Copyright © 2022 PoioCoin
-          </p>
-        </h6>
+            </h6>
+            </p>
     </div>
 </div>  
 </div>`;

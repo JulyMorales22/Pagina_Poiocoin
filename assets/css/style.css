@@ -301,26 +301,26 @@ transform: translateZ(60px);
 
 .parrafo{
   width: 850px;
-  height: 700px;
+  height: 400px;
   padding: 40px 40px;
   font-size: 20px;
-  /* background: #e7e1e9; */
+  background: #e7e1e9; 
   text-align: justify;
 }
 .parrafo h1{
   text-align: center;
 }
 .sect1{
-  /* background-color: #89ee89; */
+ background-color: #89ee89; 
   width: 850px;
-  height: 1500px;
-  
+  height: auto;
 }
 .sect1 h1{
   text-align: center;
 }
 .sect1 img{
   width: 200px;
+  display: flex;
 }
 .columna {
   width:33%;
@@ -330,10 +330,8 @@ transform: translateZ(60px);
 .columna img{
   width: 100px;
   margin:10px auto;
-  display:block;
 }
 @media (max-width: 500px) {
-  
   .columna {
     width:auto;
     float:none;

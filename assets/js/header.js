@@ -87,7 +87,6 @@ const header = `<header class="row justify-content-around" id="page">
   </div>
 </nav>
 </header>`;
-console.log("verificar footer");
 
 const divHeader = document.getElementById("header");
 divHeader.innerHTML=header;

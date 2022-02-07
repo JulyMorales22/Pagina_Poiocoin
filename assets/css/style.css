@@ -122,6 +122,12 @@ p {
   background-color: rgb(35, 36, 95);
 }
 
+.exchangeIcon{
+  color: #f5deb3;
+  font-size: 35px;
+  padding: 5px;
+}
+
 @media only screen and (max-width: 767px) {
   .icon, .divCripto {
     display: none;
@@ -135,6 +141,9 @@ p {
   }
   .navBar {
     top: 55px;
+  }
+  .mainCoinBox{
+    margin-top: 30px;
   }
 }
 
@@ -151,6 +160,7 @@ p {
 }
 .divContainer{
   margin-top: 200px;
+  
 }
 
 .divCripto{
@@ -275,8 +285,6 @@ transform: translateZ(60px);
 .coinBox img{
   width: 200px;
   padding: 10px 10px;
-
-  /* width: 48%; */
 }
 
 .coinBox p{
@@ -288,4 +296,27 @@ transform: translateZ(60px);
 
 .text-white{
   color: brown !important;
+  color: #2980b9,#8e44ad;
+}
+
+.title{
+  color: white ;
+  text-align: center;
+}
+
+.divCalculator{
+  box-sizing: border-box;
+  
+}
+.imageCenter{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.visita{
+  text-align: center;
+ width: 100%;
+  display: block;
+  color: #ffffff;
+  padding: 10px 10px;
 }

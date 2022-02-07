@@ -308,3 +308,11 @@ transform: translateZ(60px);
   box-sizing: border-box;
   
 }
+
+.visita{
+  text-align: center;
+ width: 100%;
+  display: block;
+  color: #02080e;
+  padding: 10px 10px;
+}

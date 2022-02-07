@@ -6,6 +6,7 @@ const NUMBERS_CRIPTO_ACCORDION = ["0", "1", "2","4"];
 
 const sunMode = () => {
 
+  //Es una funcion para quitar de las etiquetas las clases que tienen la propiedad nocturna, se le envia como  argumentos el id de la etiqueta y la clase para esa etiqueta
   removingDarkMode("page", "dark-mode");
   removingDarkMode("body", "dark-mode");
   removingDarkMode("navNight", "dark-mode2");
@@ -23,7 +24,7 @@ const sunMode = () => {
   });
 
   nightModeActive = false;
-
+  //classlist para traer el arreglo de las clases que tiene esa etiqueta en el html  y asi podemos buscar una clase especifica y removerla o agregarla 
   document.getElementById("id-moon").classList.remove("active");
   btnSun.classList.add("active");
 };
@@ -35,7 +36,7 @@ const removingDarkMode = (id, className) => {
   }
   // document.getElementById(id).classList.remove(className);
 };
-
+//Es una funcion para agregar a las etiquetas las clases nocturna, se le envia como  argumentos el id de la etiqueta y la clase para esa etiqueta
 const nightMode = () => {
   addingNightMode("page", "dark-mode");
   addingNightMode("body", "dark-mode");

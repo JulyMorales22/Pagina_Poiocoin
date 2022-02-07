@@ -26,7 +26,7 @@ const calculator =()=>{
             } else if(select =="GBP"){
                 total = investmentValue / POICOIN_GBP;
                 showValue(total);
-            } else if(cod=="COP"){
+            } else if(select=="COP"){
                  total = investmentValue / POICOIN_COP;
                  showValue(total);
             }else if(select=="USD"){

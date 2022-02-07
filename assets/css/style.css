@@ -6,7 +6,7 @@ box-sizing: border-box;
 font-family: 'lato'sans-serif;}
 
 body{
-  background: linear-gradient(180deg, #313283 0%, #01789c 35%);
+  background: linear-gradient(180deg, #5051aa 10%, #339fc0 60%);
 }
 
 .header {
@@ -14,7 +14,7 @@ body{
   font-weight: 600;
   font-size: 40px;
   width: 100%;
-  background: linear-gradient(90deg, #0f2144 10%, #015a75 60%);
+  background: linear-gradient(90deg, #0f2144 0%, #015a75 35%);
   z-index: 4;
 }
 

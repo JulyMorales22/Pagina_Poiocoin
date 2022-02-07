@@ -1,8 +1,8 @@
 const btnSun = document.getElementById("id-sun");
 const btnNight = document.getElementById("id-moon");
 
-const NUMBERS_QUESTION_ACCORDION = ["One","Two","Three"];
-const NUMBERS_CRIPTO_ACCORDION = ["0", "1", "2"];
+const NUMBERS_QUESTION_ACCORDION = ["One","Two","Three","Four"];
+const NUMBERS_CRIPTO_ACCORDION = ["0", "1", "2","4"];
 
 const sunMode = () => {
 

@@ -304,14 +304,14 @@ transform: translateZ(60px);
   height: 700px;
   padding: 40px 40px;
   font-size: 20px;
-  background: #e7e1e9;
+  /* background: #e7e1e9; */
   text-align: justify;
 }
 .parrafo h1{
   text-align: center;
 }
 .sect1{
-  background-color: #89ee89;
+  /* background-color: #89ee89; */
   width: 850px;
   height: 1500px;
   
@@ -345,7 +345,7 @@ transform: translateZ(60px);
   padding: 40px 40px;
 }
 .title{
-  color: darkorange;
+  color: white ;
   text-align: center;
 }
 
@@ -354,4 +354,17 @@ transform: translateZ(60px);
 }
 .divCalculator{
   box-sizing: border-box;
+
+}
+.imageCenter{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.visita{
+  text-align: center;
+ width: 100%;
+  display: block;
+  color: #ffffff;
+  padding: 10px 10px;
 }

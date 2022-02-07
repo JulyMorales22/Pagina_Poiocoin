@@ -24,5 +24,5 @@ new Morris.Line({
   gridTextSize     : 18,
   gridTextFamily   : 'Open Sans'
 
-  
+
 });

@@ -320,3 +320,12 @@ transform: translateZ(60px);
   color: #ffffff;
   padding: 10px 10px;
 }
+
+.accordionGroup, .accordionGroup:focus{
+  background:#313283;
+}
+
+.accordionGroupInte{
+  background: #71bdf0;
+}
+

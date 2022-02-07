@@ -13,6 +13,8 @@ const sunMode = () => {
   removingDarkMode("accordion2", "accordionContent");
   removingDarkMode("btnAccordion2", "dark-mode3");
 
+  nightModeActive = false;
+
   document.getElementById("id-moon").classList.remove("active");
   btnSun.classList.add("active");
 };
@@ -33,6 +35,8 @@ const nightMode = () => {
   addingNightMode("btnAccordion1", "dark-mode3");
   addingNightMode("accordion2", "accordionContent");
   addingNightMode("btnAccordion2", "dark-mode3");
+
+  nightModeActive = true;
 
   document.getElementById("id-sun").classList.remove("active");
   btnNight.classList.add("active");

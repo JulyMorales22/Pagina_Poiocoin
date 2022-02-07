@@ -1,5 +1,7 @@
 const API = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false}';
 
+let nightModeActive = false;
+
 /**
  * Para controlar los datos que se van mostrando de
  * las criptomonedas
@@ -29,9 +31,9 @@ const fillData = (data) => {
 
         if(i<limit){
             const element = data[i];
-            html += `<div class="accordion-item" id="accordion${j}">
+            html += `<div class="accordion-item ${(nightModeActive) ? "accordionContent" : ""}" id="accordion${j}">
                     <h2 class="accordion-header" id="heading${ids[j]}">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${ids[j]}" aria-expanded="false" aria-controls="collapse${ids[j]}" id="btnAccordion${j}">
+                    <button class="accordion-button collapsed ${(nightModeActive) ? "dark-mode3" : ""}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${ids[j]}" aria-expanded="false" aria-controls="collapse${ids[j]}" id="btnAccordion${j}">
                         <img src="${element.image}" alt="">
                         <h4>${element.name}</h4>
                     </button>
@@ -40,10 +42,10 @@ const fillData = (data) => {
                     <div class="accordion-body criptoInfo">
                         <ul>
                             <li>${element.name}</li>
-                            <li>${element.symbol}</li>
-                            <li>Rank: ${element.market_cap_rank}</li>
-                            <li>$${element.current_price}</li>
-                            <li>Equivale a 2000 PC</li>
+                            <li>Simbolo: ${element.symbol}</li>
+                            <li>Ranking: ${element.market_cap_rank}</li>
+                            <li>$${element.current_price} USD</li>
+                            <li>Equivale a:  ${element.current_price/8350} PoioCoin</li>
                         </ul>
                     </div>
                     </div>

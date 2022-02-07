@@ -126,12 +126,21 @@ p {
   .icon, .divCripto {
     display: none;
   }
+  .divContainer{
+    margin-top: 100px !important;
+  }
   .text {
     width: auto !important;
-    top: 0;
+    top: 10px;
   }
   .navBar {
     top: 55px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .text {
+    font-size: 26px;
   }
 }
 
@@ -258,3 +267,25 @@ transform: translateZ(60px);
   box-shadow: 1px 1px 30px 0px #d3ff0f;
 }
 
+.mainCoinBox{
+  display: flex;
+
+}
+
+.coinBox img{
+  width: 200px;
+  padding: 10px 10px;
+
+  /* width: 48%; */
+}
+
+.coinBox p{
+  color: #ffffff;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.text-white{
+  color: brown !important;
+}

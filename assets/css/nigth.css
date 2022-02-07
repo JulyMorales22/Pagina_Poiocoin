@@ -68,4 +68,17 @@
     border:1px solid white;
     color:white;
   }
-  
+  @media only screen and (max-width: 376px) {
+    .container-btn-mode{
+      right: 0px;
+    }
+  }
+
+  @media only screen and (max-width: 368px) {
+    .container-btn-mode{
+      margin-top: 65px;
+    }
+    .text {
+        font-size: 30px;
+    }
+  }

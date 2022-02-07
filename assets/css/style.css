@@ -299,14 +299,62 @@ transform: translateZ(60px);
   color: #2980b9,#8e44ad;
 }
 
+.parrafo{
+  width: 850px;
+  height: 700px;
+  padding: 40px 40px;
+  font-size: 20px;
+  /* background: #e7e1e9; */
+  text-align: justify;
+}
+.parrafo h1{
+  text-align: center;
+}
+.sect1{
+  /* background-color: #89ee89; */
+  width: 850px;
+  height: 1500px;
+  
+}
+.sect1 h1{
+  text-align: center;
+}
+.sect1 img{
+  width: 200px;
+}
+.columna {
+  width:33%;
+  float:left;
+  padding: 30px 30px;
+}
+.columna img{
+  width: 100px;
+  margin:10px auto;
+  display:block;
+}
+@media (max-width: 500px) {
+  
+  .columna {
+    width:auto;
+    float:none;
+  }
+}
+.sect1 i{
+  text-align: center;
+  font-size: 20px;
+  padding: 40px 40px;
+}
 .title{
   color: white ;
   text-align: center;
 }
 
+.sect1 p{
+  padding: 40px 40px;
+}
 .divCalculator{
   box-sizing: border-box;
-  
+
 }
 .imageCenter{
   display: block;

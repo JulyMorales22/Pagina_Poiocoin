@@ -5,6 +5,7 @@ const header = `<header class="row justify-content-around" id="page">
 <div class="col-md-10 text-center mt-3">
   <div class="text ">
     <p>
+    
       <span class="poin">Poio</span><span class="coin">Coin</span> es
     </p>
     <p>
@@ -44,6 +45,12 @@ const header = `<header class="row justify-content-around" id="page">
         <li class="nav-item">
           <a class="nav-link" href="./index.html">Inicio</a>
         </li>
+        <li class="nav-item">
+                        <a class="nav-link" href="./information.html">Ventajas</a>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="./calculator.html">Calculadora</a>
+                    </li>
         <li class="nav-item dropdown ">
           <a
             class="nav-link dropdown-toggle"
@@ -73,9 +80,6 @@ const header = `<header class="row justify-content-around" id="page">
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./calculator.html">Calculadora</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="./question.html">Preguntas Frecuentes</a>
         </li>
       </ul>
@@ -83,6 +87,7 @@ const header = `<header class="row justify-content-around" id="page">
   </div>
 </nav>
 </header>`;
+console.log("verificar footer");
 
 const divHeader = document.getElementById("header");
 divHeader.innerHTML=header;

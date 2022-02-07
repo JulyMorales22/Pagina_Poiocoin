@@ -6,12 +6,12 @@ const footer = ` <div class="container ">
             Direccion: Bogota av 5 cll 65 b.<br>
             Celular: 31153456733 - 3201790318.<br>
             Telefono: 8390564 - 8398765 <br>
-            Correo Electronico: atencionalcliente@poiocoin.com - quejasyreclamos@poiocoin.com <br>
+            Correo Electronico: atencionalcliente@poiocoin.com -<br>quejasyreclamos@poiocoin.com <br>
             Copyright © 2022 PoioCoin
             </h6>
             </p>
     </div>
-</div>  
+</div>
 </div>`;
 
 const divFooter = document.getElementById("footer");

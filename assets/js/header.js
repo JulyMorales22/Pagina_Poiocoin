@@ -63,20 +63,20 @@ const header = `<header class="row justify-content-around" id="page">
             Cursos
           </a>
           <ul
-            class="dropdown-menu dropMenu"
+            class="dropdown-menu dropMenu "
             aria-labelledby="navbarScrollingDropdown"
           >
-            <li><a class="dropdown-item text-white" href="https://www.youtube.com/playlist?list=PLlEKrQbZtTv66WqocSVUJ6qFKRtudgHOX" target="_blank" >Trading de Criptomonedas</a></li>
-            <li><a class="dropdown-item text-white" href="https://www.youtube.com/watch?v=VsGl6Ek3SKA&list=PLCeSt7rbotL-DHZfkGE6L2qohhKVGm7ss" target="_blank" >Bitcoin y criptomonedas</a></li>
+            <li><a class="dropdown-item text-white liDropMenu" href="https://www.youtube.com/playlist?list=PLlEKrQbZtTv66WqocSVUJ6qFKRtudgHOX" target="_blank" >Trading de Criptomonedas</a></li>
+            <li><a class="dropdown-item text-white liDropMenu" href="https://www.youtube.com/watch?v=VsGl6Ek3SKA&list=PLCeSt7rbotL-DHZfkGE6L2qohhKVGm7ss" target="_blank" >Bitcoin y criptomonedas</a></li>
             <!-- <li><hr class="dropdown-divider"></li> -->
-            <li><a class="dropdown-item text-white" href="https://www.youtube.com/watch?v=WReq1YyJdp8&list=PLLFi-jdtkJHy6ruGsp9HNsSU2M8HKqyUG" target="_blank" >Curso de criptomonedas</a></li>
-            <li><a href="https://www.youtube.com/watch?v=7COXXgiHE2o" target="_blank" class="dropdown-item text-white">Conoce las criptomonedas</a></li>
-            <li><a href="https://www.youtube.com/watch?v=95ar59o0MaM&list=PLpqH14VJKFWNTfpIM9ziJ--HspTEKbqnV" target="_blank"  class="dropdown-item text-white">Trading de Criptomonedas</a></li>
-            <li><a href="https://www.youtube.com/watch?v=0R9R4U0ZHy4&list=PLpqH14VJKFWPoDABjgFiRzbL46LV8hedM" target="_blank"  class="dropdown-item text-white">Grafico, soporte y otros</a></li>
-            <li><a href="https://www.youtube.com/watch?v=yh4GuSO2VWg" class="dropdown-item text-white" target="_blank" >Apalancamiento, margen y otros</a></li>
-            <li><a href="https://www.youtube.com/watch?v=mtZl8E4u41E" target="_blank"  class="dropdown-item text-white">Estrategias</a></li>
-            <li><a href="https://www.youtube.com/watch?v=cLi_VN7THY4&list=PLpqH14VJKFWOZPuqUYZm0Fqml-TeuwhcY" target="_blank" class="dropdown-item text-white">Gestion del dinero</a></li>
-            <!-- <li><a href="" class="dropdown-item text-white">Curso #7</a></li> -->
+            <li><a class="dropdown-item text-white liDropMenu" href="https://www.youtube.com/watch?v=WReq1YyJdp8&list=PLLFi-jdtkJHy6ruGsp9HNsSU2M8HKqyUG" target="_blank" >Curso de criptomonedas</a></li>
+            <li><a href="https://www.youtube.com/watch?v=7COXXgiHE2o" target="_blank" class="dropdown-item text-white liDropMenu">Conoce las criptomonedas</a></li>
+            <li><a href="https://www.youtube.com/watch?v=95ar59o0MaM&list=PLpqH14VJKFWNTfpIM9ziJ--HspTEKbqnV" target="_blank"  class="dropdown-item text-white liDropMenu">Trading de Criptomonedas</a></li>
+            <li><a href="https://www.youtube.com/watch?v=0R9R4U0ZHy4&list=PLpqH14VJKFWPoDABjgFiRzbL46LV8hedM" target="_blank"  class="dropdown-item text-white liDropMenu">Grafico, soporte y otros</a></li>
+            <li><a href="https://www.youtube.com/watch?v=yh4GuSO2VWg" class="dropdown-item text-white liDropMenu" target="_blank" >Apalancamiento, margen y otros</a></li>
+            <li><a href="https://www.youtube.com/watch?v=mtZl8E4u41E" target="_blank"  class="dropdown-item text-white liDropMenu">Estrategias</a></li>
+            <li><a href="https://www.youtube.com/watch?v=cLi_VN7THY4&list=PLpqH14VJKFWOZPuqUYZm0Fqml-TeuwhcY" target="_blank" class="dropdown-item text-white liDropMenu">Gestion del dinero</a></li>
+            <!-- <li><a href="" class="dropdown-item text-white liDropMenu">Curso #7</a></li> -->
           </ul>
         </li>
         <li class="nav-item">
@@ -87,7 +87,6 @@ const header = `<header class="row justify-content-around" id="page">
   </div>
 </nav>
 </header>`;
-console.log("verificar footer");
 
 const divHeader = document.getElementById("header");
 divHeader.innerHTML=header;

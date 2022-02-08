@@ -11,7 +11,7 @@ let words = document.getElementsByClassName('word');
  * posicion 1 contendrá un array de 6 indices, y asi sucesivamente;
  * todo eso sucede en la funcion splitLetters
  */
-let wordArray = [];
+let wordArray = []; 
 /**
  * Lo que permite currentWord es saber de qué
  * letra a qué letra pasará, por ejemplo, en primera

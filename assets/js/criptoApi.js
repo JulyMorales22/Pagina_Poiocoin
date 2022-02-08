@@ -11,6 +11,10 @@ let to = 3;
 const add = 3;
 const limit = 100;
 
+/**
+ * Se realiza el consumo de la API, se utiliza una promesa  y se hace el llamado de las funciones fillData y pagination
+ * 
+ */
 const getAPI = async (url) => {
     try {
         const res = await fetch(url);
@@ -21,7 +25,10 @@ const getAPI = async (url) => {
     }
 
 }
-
+/**
+ * funcion para recibir los datos del json y empezar a construir el accordion
+ * 
+ */
 const fillData = (data) => {
     let html = "";
     let ids = ['One', 'Two', 'Three', 'Four', 'Five'];
@@ -31,7 +38,8 @@ const fillData = (data) => {
 
         if(i<limit){
             const element = data[i];
-            html += `<div class="accordion-item accordionGroupInte ${(nightModeActive) ? "accordionContent" : ""}" id="accordion${j}">
+            //se usa el operador ternario para controlar el modo nocturno 
+            html += `<div class="accordion-item accordionGroupInte ${(nightModeActive) ? "accordionContent" : ""}" id="accordion${j}"> 
                     <h2 class="accordion-header" id="heading${ids[j]}">
                     <button class="accordion-button accordionGroup collapsed ${(nightModeActive) ? "dark-mode3" : ""}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${ids[j]}" aria-expanded="false" aria-controls="collapse${ids[j]}" id="btnAccordion${j}">
                         <img src="${element.image}" alt="">
@@ -61,6 +69,7 @@ const fillData = (data) => {
 
 }
 
+//funcion para el control de la paginacion
 const pagination = (goToPrev=null, goToNext=null) =>{
     let btn = "";
     let callFunction = false;
@@ -78,7 +87,7 @@ const pagination = (goToPrev=null, goToNext=null) =>{
     if(callFunction){
         getAPI(API);
     }
-
+    //botones de prev y next 
     btn += `<li class="page-item ${(from<=0) ? "disabled" : ""} ${(localStorage.getItem("nightMode")==true) ? "prevNext" : ""} " id="prev"> <a class="page-link textItem" onclick="pagination(true, false)">Prev</a> </li>`;
 
     btn += `<li class="page-item ${(to>=limit) ? "disabled" : ""} ${(localStorage.getItem("nightMode")==true) ? "prevNext" : ""} " id="next"> <a class="page-link textItem" onclick="pagination(false, true)">Next</a> </li>`;

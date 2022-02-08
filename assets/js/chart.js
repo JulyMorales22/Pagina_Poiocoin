@@ -1,4 +1,4 @@
-new Morris.Line({
+new Morris.Line({ //Morris libreria: especializada para graficas 
   // ID del elemento en el que dibujar el gráfico.
   element: "myfirstchart",
   // Registros de datos del gráfico: cada entrada en esta matriz corresponde a un punto en

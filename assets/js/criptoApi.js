@@ -31,9 +31,9 @@ const fillData = (data) => {
 
         if(i<limit){
             const element = data[i];
-            html += `<div class="accordion-item ${(nightModeActive) ? "accordionContent" : ""}" id="accordion${j}">
+            html += `<div class="accordion-item accordionGroupInte ${(nightModeActive) ? "accordionContent" : ""}" id="accordion${j}">
                     <h2 class="accordion-header" id="heading${ids[j]}">
-                    <button class="accordion-button collapsed ${(nightModeActive) ? "dark-mode3" : ""}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${ids[j]}" aria-expanded="false" aria-controls="collapse${ids[j]}" id="btnAccordion${j}">
+                    <button class="accordion-button accordionGroup collapsed ${(nightModeActive) ? "dark-mode3" : ""}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${ids[j]}" aria-expanded="false" aria-controls="collapse${ids[j]}" id="btnAccordion${j}">
                         <img src="${element.image}" alt="">
                         <h4>${element.name}</h4>
                     </button>

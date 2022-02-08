@@ -52,6 +52,9 @@ const fillData = (data) => {
                 </div>`;
         j++;
         }
+        else{
+            break;
+        }
     }
 
     document.getElementById("accordionExample").innerHTML=html;

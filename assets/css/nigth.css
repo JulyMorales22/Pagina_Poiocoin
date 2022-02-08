@@ -41,10 +41,13 @@
     transition: box-shadow 600ms ;
   } */
   .dark-mode{
-    background: #313030 !important;  
+    background: #313030 !important;
     transition:background .5s !important;
-    
-  }
+    -webkit-transition:background .5s !important;
+    -moz-transition:background .5s !important;
+    -ms-transition:background .5s !important;
+    -o-transition:background .5s !important;
+}
   .dark-mode2{
     background: #0e0e0e !important; 
     transition:background .5s !important;
